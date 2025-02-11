@@ -1,5 +1,13 @@
+/**
+ * Implementación del algoritmo de ordenación por radix (Radix Sort).
+ */
 public class RadixSort {
 
+    /**
+     * Ordena un array utilizando el algoritmo RadixSort.
+     *
+     * @param array El array a ordenar.
+     */
     public static void radixSort(int[] array) {
         // Encuentra el número más grande para saber el número de dígitos
         int max = java.util.Arrays.stream(array).max().orElse(0);
@@ -10,6 +18,12 @@ public class RadixSort {
         }
     }
 
+    /**
+     * Ordena un array utilizando el algoritmo CountingSort para un dígito específico.
+     *
+     * @param array El array a ordenar.
+     * @param exp El valor del dígito actual (1, 10, 100, etc.).
+     */
     private static void countingSort(int[] array, int exp) {
         int n = array.length;
         int[] output = new int[n]; // Array de salida

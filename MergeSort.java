@@ -1,5 +1,13 @@
+/**
+ * Implementación del algoritmo de ordenación por mezcla (Merge Sort).
+ */
 public class MergeSort {
 
+    /**
+     * Método principal para probar el algoritmo MergeSort.
+     *
+     * @param args Argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         int[] array = {12, 11, 13, 5, 6, 7};
         System.out.println("Array original:");
@@ -11,6 +19,11 @@ public class MergeSort {
         imprimirArray(array);
     }
 
+    /**
+     * Ordena un array utilizando el algoritmo MergeSort.
+     *
+     * @param array El array a ordenar.
+     */
     public static void mergeSort(int[] array) {
         if (array.length <= 1) {
             return;
@@ -34,6 +47,13 @@ public class MergeSort {
         mezclar(array, izquierda, derecha);
     }
 
+    /**
+     * Mezcla dos subarrays en un solo array ordenado.
+     *
+     * @param array El array original.
+     * @param izquierda El subarray izquierdo.
+     * @param derecha El subarray derecho.
+     */
     private static void mezclar(int[] array, int[] izquierda, int[] derecha) {
         int i = 0, j = 0, k = 0;
 
@@ -57,6 +77,11 @@ public class MergeSort {
         }
     }
 
+    /**
+     * Imprime un array en la consola.
+     *
+     * @param array El array a imprimir.
+     */
     private static void imprimirArray(int[] array) {
         for (int num : array) {
             System.out.print(num + " ");

@@ -1,8 +1,14 @@
-
+/**
+ * Implementación del algoritmo de ordenación por inserción.
+ */
 public class insertion_sort {
 
+    /**
+     * Ordena un array utilizando el algoritmo de inserción.
+     *
+     * @param array El array a ordenar.
+     */
     public void sort(int[] array) {
-        
         // Tamaño del array
         int n = array.length;
 

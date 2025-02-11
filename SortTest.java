@@ -1,8 +1,14 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ * Clase de prueba para verificar la funcionalidad de diferentes algoritmos de ordenación.
+ */
 public class SortTest {
 
+    /**
+     * Prueba el algoritmo QuickSort.
+     */
     @Test
     public void testQuickSort() {
         int[] arr = {10, 7, 8, 9, 1, 5};
@@ -11,6 +17,9 @@ public class SortTest {
         assertArrayEquals(expected, arr);
     }
 
+    /**
+     * Prueba el algoritmo MergeSort.
+     */
     @Test
     public void testMergeSort() {
         int[] arr = {12, 11, 13, 5, 6, 7};
@@ -19,6 +28,9 @@ public class SortTest {
         assertArrayEquals(expected, arr);
     }
 
+    /**
+     * Prueba el algoritmo RadixSort.
+     */
     @Test
     public void testRadixSort() {
         int[] arr = {170, 45, 75, 90, 802, 24, 2, 66};
@@ -27,6 +39,9 @@ public class SortTest {
         assertArrayEquals(expected, arr);
     }
 
+    /**
+     * Prueba el algoritmo SelectionSort.
+     */
     @Test
     public void testSelectionSort() {
         int[] arr = {64, 25, 12, 22, 11};
@@ -35,6 +50,9 @@ public class SortTest {
         assertArrayEquals(expected, arr);
     }
 
+    /**
+     * Prueba el algoritmo InsertionSort.
+     */
     @Test
     public void testInsertionSort() {
         int[] arr = {12, 11, 13, 5, 6};
